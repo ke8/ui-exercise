@@ -23,6 +23,29 @@ header nav ul{
 header nav h1{
 	color: #fff;
 }
+header #mobile{
+	display: none;
+	border: 1px solid #ddd;
+	padding: 10px;
+	background-color: #000;
+	float: right;
+}
+header #mobile span{
+	width: 20px;
+	border-top: 3px solid #ddd;
+	padding-bottom: 5px;
+	display: block;
+	color: #ddd;
+}
+header #mobile:hover{
+	border: 1px solid #fff;
+	background-color: #333;
+	cursor: pointer;
+}
+header #mobile:hover span{
+	color: #fff;
+	border-top: 3px solid #fff;
+}
 header nav ul{
 	margin: 0;
 	padding: 0;
@@ -34,22 +57,17 @@ header nav ul{
 }
 header nav ul li{
 	float: left;
-	width: 30%;
-	margin-left: 1%;
 }
 header nav ul li a{
 	width: 100%;
 	color: #ddd;
 	padding: 15px;
 	text-decoration: none;
+	cursor: pointer;
 }
 header nav ul li a:hover{
 	color: #fff;
 	background-color: #222;
-}
-
-main{
-
 }
 main #content,
 main #sidebar{
@@ -102,4 +120,40 @@ main #sidebar{
 
 /*MOBILE*/
 @media (max-width: 767px) {
+	header #mobile{
+		display: block;
+	}
+	.row article{
+		width: 100%;
+		text-align: center;
+	}
+	.row article img{
+		margin: 0 auto;
+		display: block;
+		max-width: 360px;
+	}
+	header nav ul{
+		clear: both;
+		display: none;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		list-style-type: none;
+		list-style-position: inside;
+		list-style-image: none;
+		float: none;
+	}
+	header nav ul li{
+		float: none;
+		margin: 0;
+		padding: 1% 0;
+		text-align: center;
+	}
+	header nav ul li a{
+		margin: 0;
+		padding: 10px 0;
+		width: 100%;
+		display: block;
+	}
 }
