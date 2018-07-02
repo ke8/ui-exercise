@@ -7,6 +7,45 @@ html,body{
 header,main,footer{
 	display: table;
 	width: 100%;
+	font-family: Arial;
+}
+
+header{
+	background-color: black;
+	padding: 10px 0;
+}
+header nav h1,
+header nav ul{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+header nav h1{
+	color: #fff;
+}
+header nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-type: none;
+	list-style-position: inside;
+	list-style-image: none;
+	float: right;
+}
+header nav ul li{
+	float: left;
+	width: 30%;
+	margin-left: 1%;
+}
+header nav ul li a{
+	width: 100%;
+	color: #ddd;
+	padding: 15px;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	color: #fff;
+	background-color: #222;
 }
 
 main{
@@ -16,15 +55,36 @@ main #content,
 main #sidebar{
 	min-height: 300px;
 	display: inline-block;
+	padding: 25px 0;
 }
 main #content{
 	width: 70%;
-	background-color: red;
+}
+main #content h2{
+	color: #111;
+	font-weight: 100;
+}
+main #content p{
+	color: #888;
+	font-size: 14px;
 }
 main #sidebar{
 	width: 30%;
-	background-color: black;
 	float: right;
+}
+
+.row{
+	display: table;
+	width: 100%;
+}
+.row article{
+	width: 30%;
+	margin: 0 1.4%;
+	display: inline-block;
+	vertical-align: top;
+}
+.row article img{
+	width: 100%;
 }
 
 /* RESPONSIVE CSS
